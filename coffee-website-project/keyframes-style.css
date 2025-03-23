@@ -1,0 +1,24 @@
+
+
+
+
+	@keyframes arrowUp {
+	0%{
+	top: 22px;
+	}
+	100%{
+	top: 4px;
+	}
+	}
+	
+	@keyframes shakeFooter {
+	0%{
+	position: absolute;
+	left: 2%;
+	}
+	100%{
+	position: absolute;
+	left: 75%;
+	}
+	}
+	
