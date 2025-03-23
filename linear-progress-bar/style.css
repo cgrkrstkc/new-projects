@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: monospace, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #afafaf;
+width: 100%;
+height: 100vh;
+}
+
+
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 3em;
+max-width: 800px;
+padding: 100px 30px;
+
+}
+.linear__progress__group{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 2.5em;
+border-radius: .3em;
+text-align: left;
+position: relative;
+border-radius: .8em;
+transition: all 1s ease;
+width: 0%;
+
+}
+.linear__progress__group:nth-child(2){
+	height: 1.6em;
+}
+.linear__progress__group:nth-child(3){
+	height: 1em;
+	
+}
+.linear__progress__group:last-child{
+	height: .3em;
+	
+}
+
+
+.linear__progress__group div {
+font-size: 1.5em;
+color: #dfdfdf;
+font-weight: 600;
+text-align: right;
+}
