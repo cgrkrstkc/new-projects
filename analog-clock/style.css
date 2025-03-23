@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: monospace, arial, sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+display: grid;
+place-items: center;
+height: 100vh;
+width: 100%;
+background-color: #f1f1f1;
+}
+.container{
+width: 500px;
+height: 500px;
+border: 2px solid #f1f1f1;
+border-radius: 50%;
+background: url(clock-withnonumbers.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border: 1px solid red;
+}
+.clock__content{
+width: 100%;
+height: 100%;
+}
+
+.clock__content .hour{
+position: absolute;
+left: 50%;
+bottom: 50%;
+width: 15px;
+height: 120px;
+background-color: #000000;
+border-radius: 2em;
+transform-origin: bottom;
+z-index:8;
+}
+.clock__content .minute{
+position: absolute;
+left: 50%;
+bottom: 50%;
+width: 10px;
+height: 160px;
+background-color: #000000;
+border-radius: 2em;
+transform-origin: bottom;
+z-index:9
+}
+.clock__content .second{
+position: absolute;
+left: 50%;
+bottom: 50%;
+width: 4px;
+height: 190px;
+background-color: crimson;
+border-radius: 5em;
+transform-origin: bottom;
+z-index: 10;
+}
+.thick__dot{
+  position: absolute;
+left: 51%;
+top: 50%;
+transform: translate(-50%,-51%);
+width: 40px;
+height: 40px;
+background-color: #000000;
+border-radius: 50%;
+z-index:11;
+}
+.am__pm{
+position: absolute;
+bottom: 19%;
+left: 50%;
+transform: translate(-50%,-19%);
+text-transform: uppercase;
+color: crimson;
+font-size: 2em;
+font-weight: 600;
+}
